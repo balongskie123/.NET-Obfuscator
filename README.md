@@ -8,58 +8,6 @@
 
 * **Obfuscation** can also help to reduce the size of the code, which can improve the performance of the application.
 
-Here is an example of a simple C# program that calculates the factorial of a given number:
-```csharp
-using System;
-
-namespace FactorialCalculator
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Enter a number:");
-            int num = int.Parse(Console.ReadLine());
-            int factorial = 1;
-
-            for (int i = 1; i <= num; i++)
-            {
-                factorial *= i;
-            }
-
-            Console.WriteLine("The factorial of {0} is {1}", num, factorial);
-        }
-    }
-}
-```
-
-To obfuscate this code, a .NET Obfuscator would transform it into something like this:
-```csharp
-using System;
-
-namespace XZkxcX
-{
-    class XxXXx
-    {
-        static void XxXXX(string[] XxxxX)
-        {
-            Console.WriteLine("Enter a number:");
-            int XxXx = int.Parse(Console.ReadLine());
-            int XXXXXXX = 1;
-
-            for (int XxXX = 1; XxXX <= XxXx; XxXX++)
-            {
-                XXXXXXX *= XxXX;
-            }
-
-            Console.WriteLine("The factorial of {0} is {1}", XxXx, XXXXXXX);
-        }
-    }
-}
-```
-As you can see, the obfuscated code is much harder to understand and follow, making it difficult for someone to reverse engineer the original code.
-
-
 <!-- Options -->
   - [Open Source](#open-source)
   - [Free](#free)
@@ -71,6 +19,7 @@ As you can see, the obfuscated code is much harder to understand and follow, mak
 * [AsStrongAsFuck](https://github.com/Charterino/AsStrongAsFuck) - A console obfuscator for .NET assemblies.
 * [BasicProxyObfucator](https://github.com/XenocodeRCE/BasicProxyObfucator) - a very basic proxy obfuscator based on dnlib 
 * [BitMono](https://github.com/sunnamed434/BitMono) - An open-source, free protector for Mono 
+* [Codecepticon](https://github.com/Accenture/Codecepticon) - .NET/PowerShell/VBA Offensive Security Obfuscator 
 * [ConfuserEx](https://github.com/yck1509/ConfuserEx) - An open-source, free protector for .NET applications.
 * [cil-examining](https://github.com/mira-ta/cil-examining) - A .NET Framework (.NET Core in the future) obfuscator. Owner is currently out sick thus working on project is stopped.
 * [Cheap Obfuscator](https://github.com/Polymeth/cheap-obfuscator) - a pretty bad obfuscator made to learn
@@ -143,9 +92,9 @@ executable files for Windows.
 * [VMProtect](https://vmpsoft.com) - VMProtect protects code by executing it on a virtual machine with non-standard architecture that makes it extremely difficult to analyze and crack the software. Besides that, VMProtect generates and verifies serial numbers, limits free upgrades and much more.
 
 ### Paid
-* [Cyphor](https://cyphor.net/details) - Cyphor is more than just an obfuscator. Cyphor is the best, fastest, and most reliable obfuscation protection tool to work with.
 * [DNGuard HVM](http://www.dnguard.net/index.php) - Advanced .NET Code Protection and Obfuscation Technology
 * [Obfuscator.NET 2009](http://www.macrobject.com/en/obfuscator/index.htm) - Protect your .NET assembly
+* [Obfuscateit.net](https://obfuscateit.net/) - Building precisely the   security   you need on your .NET app. 
 * [PV Logiciels dotNet Protector](http://www.pvlog.com/) - PV Logiciels dotNet Protector is a powerful .NET code protection system that prevents your assemblies from being decompiled.
 * [SEEUNSHARP](https://seeunsharp.net/obfuscator/en) - Have a sophisticated .NET solution?And very curious competitors?Got something valuable to hide?Take action and protect your investment!
 
