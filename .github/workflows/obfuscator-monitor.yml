@@ -1,8 +1,8 @@
 name: Obfuscator Monitor
 on:
   schedule:
-    - cron: '0 0 * * 0'  # Weekly
-  workflow_dispatch:      # Manual trigger
+    - cron: '0 0 * * 0'  # Runs every Sunday at 00:00 UTC
+  workflow_dispatch:      # Allows manual triggering
 
 jobs:
   scan:
@@ -19,12 +19,11 @@ jobs:
         run: pip install requests
 
       - name: Run Scraper
-        run: |
-          echo "Running scraper..."
-          python scrape_obfuscators.py
+        id: scraper
+        run: python scrape_obfuscators.py
 
       - name: Create Issue
-        if: ${{ steps.scraper.outputs.new_entries }}
+        if: ${{ steps.scraper.outputs.new_entries == 'true' }}
         uses: peter-evans/create-issue-from-file@v3
         with:
           title: "New Obfuscators Found"
