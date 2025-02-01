@@ -94,6 +94,7 @@ executable files for Windows.
 ### Paid
 * [DNGuard HVM](http://www.dnguard.net/index.php) - Advanced .NET Code Protection and Obfuscation Technology
 * [Obfuscator.NET 2009](http://www.macrobject.com/en/obfuscator/index.htm) - Protect your .NET assembly
+* [Obfuscateit.net](https://obfuscateit.net/) - Building precisely the   security   you need on your .NET app. 
 * [PV Logiciels dotNet Protector](http://www.pvlog.com/) - PV Logiciels dotNet Protector is a powerful .NET code protection system that prevents your assemblies from being decompiled.
 * [SEEUNSHARP](https://seeunsharp.net/obfuscator/en) - Have a sophisticated .NET solution?And very curious competitors?Got something valuable to hide?Take action and protect your investment!
 
