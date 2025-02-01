@@ -16,7 +16,8 @@
 
 ### Open Source
 * [Arya](https://github.com/HarmJ0y/Arya) - Arya is a simple obfuscator for .NET binaries.
-* [AsStrongAsFuck](https://github.com/Charterino/AsStrongAsFuck) - A console obfuscator for .NET assemblies.
+* [AsStrongAsFuck](https://github.com/decay88/AsStrongAsFuck) - A console obfuscator for .NET assemblies.
+* [Aura-.NET-Obfuscator](https://github.com/loomisntreal/Aura-.NET-Obfuscator) - Aura .NET, the superior open-source obfuscation developed in C# 
 * [BasicProxyObfucator](https://github.com/XenocodeRCE/BasicProxyObfucator) - a very basic proxy obfuscator based on dnlib 
 * [BitMono](https://github.com/sunnamed434/BitMono) - An open-source, free protector for Mono 
 * [Codecepticon](https://github.com/Accenture/Codecepticon) - .NET/PowerShell/VBA Offensive Security Obfuscator 
@@ -36,8 +37,11 @@
 * [MdCrypt](https://github.com/wwh1004/Mdcrypt) - [WIP] A next-generation protector for .NET applications (.NET Framework, .NET Core, and more) 
 * [MemeVM](https://github.com/TobitoFatitoNulled/MemeVM) - A small virtualizer for .NET which works together with ConfuserEx 
 * [MindLated](https://github.com/Sato-Isolated/MindLated) -  .net obfuscator using dnlib  
+* [MurkyStrings](https://github.com/dr4k0nia/MurkyStrings) -  A string obfuscator for .NET apps, built to evade static string analysis.  
 * [NET-Obfuscator](https://github.com/NightBaron/.NET-Obfuscator) - Simple .net obfuscator using Mono Cecil
-* [NetRenamer](https://github.com/Zenixas/NetRenamer) - Simple tool to obfuscate/rename .NET module's methods, fields, classes and more using AsmResolver. 
+* [NetRenamer](https://github.com/Zenixas/NetRenamer) - Simple tool to obfuscate/rename .NET module's methods, fields, classes and more using AsmResolver.
+* [NET-Obfuscate](https://github.com/BinaryScary/NET-Obfuscate) - Obfuscate ECMA CIL (.NET IL) assemblies to evade Windows Defender AMSI  
+* [NetShield_Protector](https://github.com/AdvDebug/NetShield_Protector) - Copy Protection Software and Obfuscator which make you securly implement a license for a user, supports licensing with: HWID, License, USB HWID, and it prevent debugging your application by applying anti-debugger attaching techniques. 
 * [Noisette](https://github.com/XenocodeRCE/Noisette-Obfuscator) - An Obfuscator for .NET assembly 
 * [obfuscatus](https://github.com/stschake/obfuscatus) - a .NET obfuscator based on mono cecil
 * [Obfuscord](https://github.com/JReverse/Obfuscord) - Obfuscates A file Through Discord as a Bot using Discord.Net Api
@@ -46,6 +50,8 @@
 * [OctopusObfuscator](https://github.com/Alxs009/OctopusObfuscator) - Basic obfuscator for .NET
 * [Panda-Obfuscator](https://github.com/barotyson/Panda-Obfuscator) - PandaObfuscator an simple Obfuscator, free, OpenSource for .Net Applications 
 * [PAOfuscator](https://github.com/Schaboom/PAOfuscator) - Obfuscator für Paradise.de
+* [Protect.NET](https://github.com/gubed/Protect.NET) -  Obfuscator for .NET assemblies. 
+* [SharPyShell](https://github.com/antonioCoco/SharPyShell) - tiny and obfuscated ASP.NET webshell for C# web applications 
 * [SimpleObfuscator](https://github.com/GabrieleAsaro/SimpleObfuscator) - Simple obfuscator   
 * [SourceCodeObfuscator](https://github.com/0x000N3X4N/SourceCodeObfuscator) - C# source code obfuscator
 * [SpecterObfuscator](https://github.com/xXeptioN/SpecterObfuscator) - This Application will obfuscate your .NET Assembly
