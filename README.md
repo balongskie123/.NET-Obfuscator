@@ -8,58 +8,6 @@
 
 * **Obfuscation** can also help to reduce the size of the code, which can improve the performance of the application.
 
-Here is an example of a simple C# program that calculates the factorial of a given number:
-```csharp
-using System;
-
-namespace FactorialCalculator
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Enter a number:");
-            int num = int.Parse(Console.ReadLine());
-            int factorial = 1;
-
-            for (int i = 1; i <= num; i++)
-            {
-                factorial *= i;
-            }
-
-            Console.WriteLine("The factorial of {0} is {1}", num, factorial);
-        }
-    }
-}
-```
-
-To obfuscate this code, a .NET Obfuscator would transform it into something like this:
-```csharp
-using System;
-
-namespace XZkxcX
-{
-    class XxXXx
-    {
-        static void XxXXX(string[] XxxxX)
-        {
-            Console.WriteLine("Enter a number:");
-            int XxXx = int.Parse(Console.ReadLine());
-            int XXXXXXX = 1;
-
-            for (int XxXX = 1; XxXX <= XxXx; XxXX++)
-            {
-                XXXXXXX *= XxXX;
-            }
-
-            Console.WriteLine("The factorial of {0} is {1}", XxXx, XXXXXXX);
-        }
-    }
-}
-```
-As you can see, the obfuscated code is much harder to understand and follow, making it difficult for someone to reverse engineer the original code.
-
-
 <!-- Options -->
   - [Open Source](#open-source)
   - [Free](#free)
@@ -71,6 +19,7 @@ As you can see, the obfuscated code is much harder to understand and follow, mak
 * [AsStrongAsFuck](https://github.com/Charterino/AsStrongAsFuck) - A console obfuscator for .NET assemblies.
 * [BasicProxyObfucator](https://github.com/XenocodeRCE/BasicProxyObfucator) - a very basic proxy obfuscator based on dnlib 
 * [BitMono](https://github.com/sunnamed434/BitMono) - An open-source, free protector for Mono 
+* [Codecepticon](https://github.com/Accenture/Codecepticon) - .NET/PowerShell/VBA Offensive Security Obfuscator 
 * [ConfuserEx](https://github.com/yck1509/ConfuserEx) - An open-source, free protector for .NET applications.
 * [cil-examining](https://github.com/mira-ta/cil-examining) - A .NET Framework (.NET Core in the future) obfuscator. Owner is currently out sick thus working on project is stopped.
 * [Cheap Obfuscator](https://github.com/Polymeth/cheap-obfuscator) - a pretty bad obfuscator made to learn
