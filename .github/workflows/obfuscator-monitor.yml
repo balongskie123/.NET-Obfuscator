@@ -1,22 +1,31 @@
-name: Obfuscator Monitor  # Name of your workflow
+name: Obfuscator Monitor
 on:
   schedule:
-    - cron: '0 0 * * 0'  # Runs every Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'  # Weekly
+  workflow_dispatch:      # Manual trigger
+
 jobs:
   scan:
-    runs-on: ubuntu-latest  # Use a Linux machine
+    runs-on: ubuntu-latest
     steps:
-      # Step 1: Checkout your repo
       - uses: actions/checkout@v2
-      
-      # Step 2: Run your Python scraper script
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
       - name: Run Scraper
-        run: python scrape_obfuscators.py
-        
-      # Step 3: Create GitHub Issue if new tools found
+        run: |
+          echo "Running scraper..."
+          python scrape_obfuscators.py
+
       - name: Create Issue
-        if: ${{ steps.scraper.outputs.new_entries }}  # Only run if scraper finds new entries
+        if: ${{ steps.scraper.outputs.new_entries }}
         uses: peter-evans/create-issue-from-file@v3
         with:
           title: "New Obfuscators Found"
-          content-filepath: ./new_obfuscators.md  # File containing issue body
+          content-filepath: ./new_obfuscators.md
