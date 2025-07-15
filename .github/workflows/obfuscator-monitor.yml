@@ -4,6 +4,7 @@ on:
     - cron: '0 0 * * 0'  # Runs every Sunday at 00:00 UTC
   workflow_dispatch:      # Allows manual triggering
 
+
 jobs:
   scan:
     runs-on: ubuntu-latest
