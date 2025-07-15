@@ -1,34 +1,32 @@
-name: .NET Obfuscator Build
+name: .NET Obfuscator CI
 
 on:
   push:
-    branches: [ "master", "main" ] # Trigger on pushes to master or main branches
+    branches: [ "master", "main" ]
   pull_request:
-    branches: [ "master", "main" ] # Trigger on pull requests targeting master or main
+    branches: [ "master", "main" ]
 
 jobs:
   build:
-    runs-on: windows-latest # Using a Windows runner as .NET projects often work well here
+    runs-on: windows-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4 # Action to checkout your repository code
+    - name: Checkout Repository Code
+      uses: actions/checkout@v4
 
-    - name: Setup .NET SDK
-      uses: actions/setup-dotnet@v4 # Action to install a specific .NET SDK version
+    - name: Setup .NET 8 SDK
+      uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.x' # Specify the desired .NET version (e.g., '6.x', '7.x', '8.x')
+        dotnet-version: '8.x'
 
-    - name: Restore NuGet packages
-      run: dotnet restore # Restore project dependencies from NuGet
+    - name: Restore NuGet Packages
+      # Specify the path to your solution file here
+      run: dotnet restore DotNetObfuscator/DotNetObfuscator.sln 
 
     - name: Build Project
-      run: dotnet build --configuration Release --no-restore # Build the project in Release configuration
-      # If your solution file is not in the root, specify the path:
-      # run: dotnet build YourSolutionFolder/YourSolution.sln --configuration Release --no-restore
+      # Specify the path to your solution file here as well
+      run: dotnet build DotNetObfuscator/DotNetObfuscator.sln --configuration Release --no-restore 
 
-    # Uncomment the following steps if your project has tests and you want to run them
+    # Optional: If you have unit tests, specify the path to your test project
     # - name: Run Tests
-    #   run: dotnet test --configuration Release --no-build --verbosity normal
-    #   # If your test project is not in the root, specify the path:
-    #   # run: dotnet test YourTestsFolder/YourTests.csproj --configuration Release --no-build --verbosity normal
+    #   run: dotnet test DotNetObfuscator.Tests/DotNetObfuscator.Tests.csproj --configuration Release --no-build --verbosity normal
